@@ -1,0 +1,39 @@
+
+/* منوی شهر قسط — ملایم و متمایز */
+#adminmenu #toplevel_page_city-ghest {
+  background: #312e81 !important;
+  margin: 5px 8px !important;
+  border-radius: 10px !important;
+  box-shadow: 0 2px 8px rgba(49, 46, 129, 0.25) !important;
+}
+#adminmenu #toplevel_page_city-ghest > a,
+#adminmenu #toplevel_page_city-ghest > a .wp-menu-name {
+  color: #e0e7ff !important;
+  font-weight: 600 !important;
+  font-size: 13.5px !important;
+  text-shadow: none !important;
+}
+#adminmenu #toplevel_page_city-ghest.wp-has-current-submenu > a,
+#adminmenu #toplevel_page_city-ghest.current > a,
+#adminmenu #toplevel_page_city-ghest:hover > a {
+  color: #fff !important;
+  background: #3730a3 !important;
+}
+#adminmenu #toplevel_page_city-ghest .wp-submenu {
+  background: #1e1b4b !important;
+  border-radius: 0 0 10px 10px !important;
+  margin: 0 !important;
+}
+#adminmenu #toplevel_page_city-ghest .wp-submenu a {
+  color: #c7d2fe !important;
+  font-weight: 500 !important;
+  font-size: 12.5px !important;
+}
+#adminmenu #toplevel_page_city-ghest .wp-submenu a:hover,
+#adminmenu #toplevel_page_city-ghest .wp-submenu li.current a {
+  color: #fff !important;
+  background: rgba(255,255,255,0.08) !important;
+}
+#adminmenu #toplevel_page_city-ghest .wp-menu-image:before {
+  color: #a5b4fc !important;
+}

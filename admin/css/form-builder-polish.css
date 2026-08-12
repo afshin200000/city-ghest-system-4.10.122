@@ -1,0 +1,32 @@
+
+.cgs-fb-wrap { font-family: Vazirmatn, Tahoma, sans-serif; }
+.cgs-fb-hero {
+  background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+  color: #fff; border-radius: 16px; padding: 18px 22px; margin-bottom: 16px;
+  box-shadow: 0 8px 28px rgba(26,35,126,0.25);
+}
+.cgs-fb-hero h1 { color: #fff !important; margin: 0 0 6px; font-size: 1.35rem; }
+.cgs-fb-hero p { margin: 0; opacity: 0.9; font-size: 13px; }
+.cgs-fb-card, .cgs-panel {
+  background: #fff; border: 1px solid #e2e8f0; border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(15,23,42,0.05);
+}
+.cgs-dynamic-table.is-striped tbody tr:nth-child(even) td { background: #f1f5f9; }
+.cgs-dynamic-table.is-bordered td, .cgs-dynamic-table.is-bordered th {
+  border: 1px solid #e2e8f0 !important;
+}
+.cgs-dynamic-table.is-compact th, .cgs-dynamic-table.is-compact td {
+  padding: 4px 6px !important; font-size: 12px !important;
+}
+.cgs-dynamic-table thead th {
+  background: var(--cgs-th-bg, #1a237e) !important;
+  color: var(--cgs-th-fg, #fff) !important;
+}
+#cgs-modal .cgs-modal-content {
+  border-radius: 16px !important; box-shadow: 0 20px 50px rgba(0,0,0,0.2) !important;
+  max-width: 560px; font-family: Vazirmatn, Tahoma, sans-serif;
+}
+.cgs-btn-admin {
+  font-family: Vazirmatn, Tahoma, sans-serif !important;
+  letter-spacing: 0 !important;
+}

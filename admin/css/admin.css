@@ -1,0 +1,474 @@
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
+body.wp-admin, body.wp-admin .wrap, body.wp-admin .form-table, body.wp-admin .cgs-admin-wrap,
+body.wp-admin input, body.wp-admin select, body.wp-admin button, body.wp-admin textarea, body.wp-admin label,
+body.wp-admin .button, .cgs-ic-admin, .cgs-ic-admin * {
+  font-family: Vazirmatn, Tahoma, "Iranian Sans", sans-serif !important;
+}
+body.wp-admin .wrap h1, body.wp-admin .wrap h2, body.wp-admin .wrap h3,
+.cgs-ic-admin h1, .cgs-ic-admin h2, .cgs-ic-admin h3, .cgs-ic-sec-title {
+  font-family: Vazirmatn, Tahoma, sans-serif !important;
+  font-weight: 700 !important;
+}
+.cgs-admin-wrap {
+    max-width: 1200px;
+}
+.cgs-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin: 24px 0 40px;
+}
+.cgs-stat-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.cgs-stat-number {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1a237e;
+}
+.cgs-stat-card.pending .cgs-stat-number { color: #f9a825; }
+.cgs-stat-card.approved .cgs-stat-number { color: #2e7d32; }
+.cgs-stat-card.rejected .cgs-stat-number { color: #c62828; }
+.cgs-stat-label {
+    color: #666;
+    margin-top: 6px;
+}
+.cgs-types-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+}
+.cgs-type-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.cgs-type-card .dashicons {
+    font-size: 28px;
+    width: 28px;
+    height: 28px;
+    color: #555;
+}
+.cgs-type-count {
+    margin-right: auto;
+    color: #888;
+    font-size: 0.9rem;
+}
+.cgs-type-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0;
+}
+.cgs-tab {
+    padding: 8px 18px;
+    background: #f0f0f1;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #333;
+}
+.cgs-tab.active {
+    background: #1a237e;
+    color: #fff;
+}
+.cgs-sortable {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.cgs-field-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: box-shadow 0.2s;
+}
+.cgs-field-item:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.cgs-drag-handle {
+    color: #999;
+    cursor: grab;
+    font-size: 18px;
+}
+.cgs-field-info {
+    flex: 1;
+}
+.cgs-field-label {
+    display: block;
+    margin-bottom: 3px;
+}
+.cgs-field-meta {
+    color: #888;
+    font-size: 0.85rem;
+}
+.cgs-field-actions {
+    display: flex;
+    gap: 6px;
+}
+.cgs-sortable-placeholder {
+    border: 2px dashed #1a237e;
+    background: #eef0ff;
+    height: 50px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.cgs-no-fields {
+    padding: 30px;
+    text-align: center;
+    color: #999;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+.cgs-filters {
+    margin: 16px 0;
+}
+.cgs-filters select {
+    margin-left: 8px;
+}
+
+/* CGS admin shell — prevent sidebar clipping */
+body.toplevel_page_city-ghest #wpbody-content,
+body[class*="city-ghest"] #wpbody-content,
+body[class*="cgs-"] #wpbody-content {
+  overflow-x: visible !important;
+}
+.wrap.cgs-admin-wrap {
+  max-width: 100%;
+  box-sizing: border-box;
+  padding-left: 0;
+  padding-right: 12px;
+  margin-right: 0;
+  overflow: visible;
+}
+.wrap.cgs-admin-wrap .cgs-settings-panel {
+  max-width: 100%;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+.wrap.cgs-admin-wrap .form-table th {
+  width: 200px;
+  padding-right: 12px;
+}
+.wrap.cgs-admin-wrap .form-table td {
+  word-break: break-word;
+}
+/* Remove WordPress footer credit on all City Ghest screens */
+body.toplevel_page_city-ghest #wpfooter,
+body[class*="city-ghest_page_"] #wpfooter,
+body[class*="cgs-"] #wpfooter {
+  display: none !important;
+}
+
+/* CGS shell */
+.wrap.cgs-admin-wrap{max-width:100%;overflow:visible;box-sizing:border-box;padding-right:8px;}
+.wrap.cgs-admin-wrap .cgs-settings-panel{max-width:100%;overflow-x:auto;}
+body.toplevel_page_city-ghest #wpfooter,body[class*="city-ghest_page_"] #wpfooter{display:none!important;}
+
+/* Prevent content under WP sidebar */
+#wpbody-content .wrap.cgs-admin-wrap,
+#wpbody-content .wrap.cgs-plans-wrap,
+#wpbody-content .wrap.cgs-fb-wrap {
+  position: relative;
+  z-index: 1;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  max-width: 100% !important;
+  width: auto !important;
+  box-sizing: border-box !important;
+  padding: 12px 16px 24px 0 !important;
+  overflow-x: auto !important;
+  clear: both;
+}
+#wpbody-content .wrap.cgs-admin-wrap .form-table,
+#wpbody-content .wrap.cgs-plans-wrap table {
+  max-width: 100%;
+  table-layout: auto;
+}
+#wpbody-content .wrap.cgs-admin-wrap .nav-tab-wrapper {
+  flex-wrap: wrap;
+  white-space: normal;
+}
+
+body.wp-admin.rtl #wpcontent { margin-right: 160px !important; }
+body.wp-admin.rtl.folded #wpcontent { margin-right: 36px !important; }
+body.wp-admin.rtl #wpbody-content .wrap { box-sizing: border-box; }
+
+/* ===== منوی شهر قسط در سایدبار وردپرس ===== */
+#adminmenu #toplevel_page_city-ghest {
+  background: linear-gradient(135deg, #1a237e 0%, #283593 55%, #3949ab 100%) !important;
+  margin: 6px 8px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 16px rgba(26, 35, 126, 0.35) !important;
+  overflow: hidden;
+}
+#adminmenu #toplevel_page_city-ghest > a {
+  font-family: Vazirmatn, Tahoma, sans-serif !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  letter-spacing: 0;
+}
+#adminmenu #toplevel_page_city-ghest > a .wp-menu-name {
+  color: #fff !important;
+  font-family: Vazirmatn, Tahoma, sans-serif !important;
+}
+#adminmenu #toplevel_page_city-ghest:hover,
+#adminmenu #toplevel_page_city-ghest.wp-has-current-submenu,
+#adminmenu #toplevel_page_city-ghest.current {
+  background: linear-gradient(135deg, #0d47a1 0%, #1565c0 100%) !important;
+}
+#adminmenu #toplevel_page_city-ghest .wp-submenu {
+  background: #121a4a !important;
+  border-radius: 0 0 12px 12px !important;
+  left: auto !important;
+}
+#adminmenu #toplevel_page_city-ghest .wp-submenu a {
+  color: #c5cae9 !important;
+  font-family: Vazirmatn, Tahoma, sans-serif !important;
+  font-size: 13px !important;
+}
+#adminmenu #toplevel_page_city-ghest .wp-submenu a:hover,
+#adminmenu #toplevel_page_city-ghest .wp-submenu .current a {
+  color: #fff !important;
+  background: rgba(255,255,255,0.1) !important;
+}
+#adminmenu #toplevel_page_city-ghest .wp-menu-image:before {
+  color: #ffd54f !important;
+}
+
+/* ===== دکمه‌های ذخیره شیک ===== */
+.cgs-btn-admin {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 12px 22px !important;
+  border: none !important;
+  border-radius: 12px !important;
+  font-family: Vazirmatn, Tahoma, sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
+  transition: all 0.22s ease !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12) !important;
+  line-height: 1.3 !important;
+  text-decoration: none !important;
+}
+.cgs-btn-admin-success {
+  background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 45%, #43a047 100%) !important;
+  color: #fff !important;
+}
+.cgs-btn-admin-success:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(46, 125, 50, 0.4) !important;
+  color: #fff !important;
+}
+.cgs-btn-admin-primary {
+  background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%) !important;
+  color: #fff !important;
+}
+.cgs-btn-admin-primary:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(26, 35, 126, 0.35) !important;
+  color: #fff !important;
+}
+.cgs-btn-admin-danger {
+  background: linear-gradient(135deg, #b71c1c, #e53935) !important;
+  color: #fff !important;
+}
+.cgs-btn-admin-warning {
+  background: linear-gradient(135deg, #e65100, #fb8c00) !important;
+  color: #fff !important;
+}
+.cgs-btn-lg { font-size: 15px !important; padding: 13px 26px !important; }
+.cgs-tab-save.sticky-save {
+  position: sticky;
+  bottom: 12px;
+  z-index: 50;
+  margin: 20px 0 8px !important;
+  padding: 14px 16px !important;
+  background: linear-gradient(180deg, rgba(240,253,244,0.95), #e8f5e9) !important;
+  border: 1px solid #a5d6a7 !important;
+  border-radius: 14px !important;
+  box-shadow: 0 8px 28px rgba(46, 125, 50, 0.15) !important;
+  text-align: center;
+}
+
+/* ===== راهنمای آموزشی ===== */
+.cgs-help {
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+  border: 1px solid #c5cae9;
+  border-radius: 14px;
+  margin: 0 0 18px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(26, 35, 126, 0.06);
+}
+.cgs-help summary {
+  cursor: pointer;
+  padding: 12px 16px;
+  font-weight: 700;
+  font-family: Vazirmatn, Tahoma, sans-serif;
+  color: #1a237e;
+  font-size: 13.5px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+}
+.cgs-help summary::-webkit-details-marker { display: none; }
+.cgs-help summary::before {
+  content: "❓";
+  font-size: 15px;
+}
+.cgs-help[open] summary {
+  border-bottom: 1px solid #e0e7ff;
+  background: rgba(26, 35, 126, 0.04);
+}
+.cgs-help-body {
+  padding: 12px 16px 16px;
+  font-size: 13px;
+  line-height: 1.85;
+  color: #334155;
+  font-family: Vazirmatn, Tahoma, sans-serif;
+}
+.cgs-help-body ol, .cgs-help-body ul {
+  margin: 8px 0 8px 18px;
+  padding: 0;
+}
+.cgs-help-body li { margin-bottom: 6px; }
+.cgs-help-body .cgs-help-tip {
+  background: #fff8e1;
+  border-right: 3px solid #f9a825;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 12.5px;
+}
+
+/* ===== تم‌های رنگی ===== */
+.cgs-themes-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+  margin: 12px 0 8px;
+}
+.cgs-theme-card {
+  border: 2px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 12px;
+  cursor: pointer;
+  background: #fff;
+  transition: all 0.2s;
+  text-align: center;
+  font-family: Vazirmatn, Tahoma, sans-serif;
+}
+.cgs-theme-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.cgs-theme-card.is-active {
+  border-color: #1a237e;
+  box-shadow: 0 0 0 3px rgba(26, 35, 126, 0.2);
+}
+.cgs-theme-swatches {
+  display: flex;
+  height: 28px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.cgs-theme-swatches span { flex: 1; }
+.cgs-theme-name {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+/* ===== جدول داینامیک بهینه ===== */
+.cgs-dynamic-table-wrap {
+  overflow-x: auto;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e2e8f0;
+}
+.cgs-dynamic-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 13px;
+  font-family: Vazirmatn, Tahoma, sans-serif;
+}
+.cgs-dynamic-table thead th {
+  color: #fff;
+  padding: 11px 12px;
+  font-weight: 700;
+  font-size: 12.5px;
+  text-align: right;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.cgs-dynamic-table tbody td {
+  border-bottom: 1px solid #eef2f7;
+  padding: 6px 8px;
+  vertical-align: middle;
+}
+.cgs-dynamic-table tbody tr:nth-child(even) td { background: #f8fafc; }
+.cgs-dynamic-table tbody tr:hover td { background: #eef2ff; }
+.cgs-dynamic-table tbody input.cgs-input {
+  width: 100%;
+  border: 1px solid transparent !important;
+  background: transparent !important;
+  min-height: 36px !important;
+  border-radius: 8px !important;
+  padding: 6px 10px !important;
+  font-size: 13px !important;
+}
+.cgs-dynamic-table tbody input.cgs-input:focus {
+  border-color: #9fa8da !important;
+  background: #fff !important;
+  box-shadow: 0 0 0 3px rgba(26, 35, 126, 0.1) !important;
+}
+.cgs-table-add-row {
+  margin: 10px !important;
+  border-radius: 10px !important;
+  background: #eef2ff !important;
+  color: #1a237e !important;
+  border: 1px solid #c5cae9 !important;
+  font-weight: 700 !important;
+  font-family: Vazirmatn, Tahoma, sans-serif !important;
+  padding: 8px 14px !important;
+  cursor: pointer;
+}
+
+/* مراحل فرم — sortable */
+#cgs-step-meta-cards .cgs-step-card { transition: box-shadow .15s, border-color .15s; }
+#cgs-step-meta-cards .cgs-step-card:hover { border-color: #9fa8da; box-shadow: 0 4px 14px rgba(26,35,126,.1); }
+#cgs-step-meta-cards .cgs-step-drag-handle:active { cursor: grabbing; }
+#cgs-step-meta-cards .cgs-step-sortable-placeholder {
+  border: 2px dashed #7986cb !important;
+  background: #e8eaf6 !important;
+  border-radius: 10px;
+  min-height: 120px;
+  visibility: visible !important;
+}
+
+/* SortableJS ghosts */
+.cgs-sortable-ghost { opacity: 0.45 !important; background: #e8eaf6 !important; border: 2px dashed #7986cb !important; }
+.cgs-sortable-chosen { box-shadow: 0 8px 24px rgba(26,35,126,.18) !important; }

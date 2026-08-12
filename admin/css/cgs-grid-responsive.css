@@ -1,0 +1,115 @@
+/**
+ * CGS Grid + Preview layout v4.0
+ * Preview uses flex so free field width persists (grid was forcing cell size).
+ */
+:root {
+  --cgs-cols: 2;
+  --cgs-grid-gap: 12px;
+  --cgs-label: #475569;
+}
+
+#cgs-live-preview {
+  container-type: inline-size;
+  container-name: cgs-preview;
+}
+
+#cgs-live-preview .cgs-step-fields,
+#cgs-live-preview .cgs-step-fields.cgs-has-guides,
+#cgs-live-preview .cgs-step-fields.cgs-layout-canvas {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: flex-start !important;
+  gap: var(--cgs-grid-gap, 12px) !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+#cgs-live-preview .cgs-step-fields.cgs-has-guides {
+  border: 1px dashed #9fa8da !important;
+  border-radius: 12px !important;
+  padding: 12px !important;
+  background-color: #fafbff !important;
+}
+
+#cgs-live-preview .cgs-field-group,
+#cgs-live-preview .cgs-field-card {
+  box-sizing: border-box !important;
+  max-width: 100% !important;
+  min-width: 12% !important;
+  position: relative !important;
+  flex: 0 0 var(--cgs-fw, 100%) !important;
+  width: var(--cgs-fw, 100%) !important;
+}
+
+#cgs-live-preview .cgs-resize-handle {
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: 10px !important;
+  cursor: ew-resize !important;
+  z-index: 20 !important;
+}
+#cgs-live-preview .cgs-resize-handle:hover {
+  background: rgba(26, 35, 126, 0.15) !important;
+}
+#cgs-live-preview .cgs-width-badge {
+  position: absolute;
+  top: 2px;
+  left: 12px;
+  font-size: 10px;
+  background: #eef2ff;
+  color: #1a237e;
+  padding: 1px 5px;
+  border-radius: 4px;
+  z-index: 15;
+  pointer-events: none;
+}
+
+#cgs-live-preview.cgs-labels-beside .cgs-field-group {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+#cgs-live-preview.cgs-labels-beside .cgs-field-label,
+#cgs-live-preview.cgs-labels-beside label.cgs-field-label {
+  flex: 0 0 32% !important;
+  margin: 0 !important;
+}
+#cgs-live-preview.cgs-labels-beside .cgs-field-control {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+}
+#cgs-live-preview.cgs-labels-above .cgs-field-group {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+}
+
+.cgs-form-wrapper .cgs-step-fields {
+  display: grid !important;
+  grid-template-columns: repeat(var(--cgs-cols, 2), minmax(0, 1fr)) !important;
+  gap: var(--cgs-grid-gap, 12px) !important;
+}
+
+.cgs-set-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 14px 18px !important;
+}
+.cgs-themes-box {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)) !important;
+  gap: 10px !important;
+}
+@media (max-width: 960px) {
+  .cgs-set-grid { grid-template-columns: 1fr !important; }
+}
+@media (max-width: 600px) {
+  #cgs-live-preview .cgs-field-group {
+    flex: 0 0 100% !important;
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,485 @@
+{
+  "providers": [
+    {
+      "name": "Font Awesome (فونت‌آیکن)",
+      "url": "https://fontawesome.com/icons",
+      "type": "font"
+    },
+    {
+      "name": "Google Material Icons",
+      "url": "https://fonts.google.com/icons",
+      "type": "font"
+    },
+    {
+      "name": "Heroicons (SVG)",
+      "url": "https://heroicons.com/",
+      "type": "graphic"
+    },
+    {
+      "name": "Lucide",
+      "url": "https://lucide.dev/icons/",
+      "type": "graphic"
+    },
+    {
+      "name": "Tabler Icons",
+      "url": "https://tabler.io/icons",
+      "type": "graphic"
+    },
+    {
+      "name": "Icons8 (گرافیکی)",
+      "url": "https://icons8.com/",
+      "type": "graphic"
+    },
+    {
+      "name": "LottieFiles (انیمیشنی)",
+      "url": "https://lottiefiles.com/",
+      "type": "animated"
+    },
+    {
+      "name": "Lordicon (انیمیشنی)",
+      "url": "https://lordicon.com/",
+      "type": "animated"
+    },
+    {
+      "name": "AnimatedIcons.co",
+      "url": "https://animatedicons.co/",
+      "type": "animated"
+    }
+  ],
+  "icons": [
+    {
+      "id": "home",
+      "label": "خانه",
+      "value": "🏠",
+      "emoji": "🏠",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "shop",
+      "label": "فروشگاه",
+      "value": "🛒",
+      "emoji": "🛒",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "user",
+      "label": "کاربر",
+      "value": "👤",
+      "emoji": "👤",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "phone",
+      "label": "تماس",
+      "value": "📞",
+      "emoji": "📞",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "mail",
+      "label": "ایمیل",
+      "value": "✉️",
+      "emoji": "✉️",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "calc",
+      "label": "محاسبه",
+      "value": "🧮",
+      "emoji": "🧮",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "card",
+      "label": "کارت",
+      "value": "💳",
+      "emoji": "💳",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "chart",
+      "label": "نمودار",
+      "value": "📊",
+      "emoji": "📊",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "shield",
+      "label": "امنیت",
+      "value": "🔒",
+      "emoji": "🔒",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "star",
+      "label": "ویژه",
+      "value": "⭐",
+      "emoji": "⭐",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "mega",
+      "label": "مگا",
+      "value": "▦",
+      "emoji": "▦",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "video",
+      "label": "ویدئو",
+      "value": "▶️",
+      "emoji": "▶️",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "image",
+      "label": "تصویر",
+      "value": "🖼️",
+      "emoji": "🖼️",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "link",
+      "label": "لینک",
+      "value": "🔗",
+      "emoji": "🔗",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "gear",
+      "label": "تنظیمات",
+      "value": "⚙️",
+      "emoji": "⚙️",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "help",
+      "label": "راهنما",
+      "value": "❓",
+      "emoji": "❓",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "blog",
+      "label": "بلاگ",
+      "value": "📝",
+      "emoji": "📝",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "map",
+      "label": "نقشه",
+      "value": "📍",
+      "emoji": "📍",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "gift",
+      "label": "هدیه",
+      "value": "🎁",
+      "emoji": "🎁",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "rocket",
+      "label": "شروع",
+      "value": "🚀",
+      "emoji": "🚀",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "bag",
+      "label": "کیف",
+      "value": "👜",
+      "emoji": "👜",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "heart",
+      "label": "علاقه",
+      "value": "❤️",
+      "emoji": "❤️",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "bell",
+      "label": "اعلان",
+      "value": "🔔",
+      "emoji": "🔔",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "search",
+      "label": "جستجو",
+      "value": "🔍",
+      "emoji": "🔍",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "check",
+      "label": "تأیید",
+      "value": "✅",
+      "emoji": "✅",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "info",
+      "label": "اطلاع",
+      "value": "ℹ️",
+      "emoji": "ℹ️",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "warn",
+      "label": "هشدار",
+      "value": "⚠️",
+      "emoji": "⚠️",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "docs",
+      "label": "اسناد",
+      "value": "📄",
+      "emoji": "📄",
+      "type": "static",
+      "category": "emoji"
+    },
+    {
+      "id": "fa-home",
+      "label": "خانه FA",
+      "value": "fa fa-home",
+      "emoji": "🔤",
+      "type": "font",
+      "category": "font",
+      "hint": "fa fa-home"
+    },
+    {
+      "id": "fa-user",
+      "label": "کاربر FA",
+      "value": "fa fa-user",
+      "emoji": "🔤",
+      "type": "font",
+      "category": "font",
+      "hint": "fa fa-user"
+    },
+    {
+      "id": "fa-shopping-cart",
+      "label": "سبد FA",
+      "value": "fa fa-shopping-cart",
+      "emoji": "🔤",
+      "type": "font",
+      "category": "font",
+      "hint": "fa fa-shopping-cart"
+    },
+    {
+      "id": "fa-phone",
+      "label": "تماس FA",
+      "value": "fa fa-phone",
+      "emoji": "🔤",
+      "type": "font",
+      "category": "font",
+      "hint": "fa fa-phone"
+    },
+    {
+      "id": "fa-envelope",
+      "label": "ایمیل FA",
+      "value": "fa fa-envelope",
+      "emoji": "🔤",
+      "type": "font",
+      "category": "font",
+      "hint": "fa fa-envelope"
+    },
+    {
+      "id": "fa-chart-line",
+      "label": "نمودار FA",
+      "value": "fa fa-chart-line",
+      "emoji": "🔤",
+      "type": "font",
+      "category": "font",
+      "hint": "fa fa-chart-line"
+    },
+    {
+      "id": "fa-shield",
+      "label": "امنیت FA",
+      "value": "fa fa-shield",
+      "emoji": "🔤",
+      "type": "font",
+      "category": "font",
+      "hint": "fa fa-shield"
+    },
+    {
+      "id": "fa-star",
+      "label": "ستاره FA",
+      "value": "fa fa-star",
+      "emoji": "🔤",
+      "type": "font",
+      "category": "font",
+      "hint": "fa fa-star"
+    },
+    {
+      "id": "fa-bars",
+      "label": "منو FA",
+      "value": "fa fa-bars",
+      "emoji": "🔤",
+      "type": "font",
+      "category": "font",
+      "hint": "fa fa-bars"
+    },
+    {
+      "id": "fa-cog",
+      "label": "تنظیم FA",
+      "value": "fa fa-cog",
+      "emoji": "🔤",
+      "type": "font",
+      "category": "font",
+      "hint": "fa fa-cog"
+    },
+    {
+      "id": "fa-credit-card",
+      "label": "کارت FA",
+      "value": "fa fa-credit-card",
+      "emoji": "🔤",
+      "type": "font",
+      "category": "font",
+      "hint": "fa fa-credit-card"
+    },
+    {
+      "id": "fa-building",
+      "label": "سازمان FA",
+      "value": "fa fa-building",
+      "emoji": "🔤",
+      "type": "font",
+      "category": "font",
+      "hint": "fa fa-building"
+    },
+    {
+      "id": "svg-home",
+      "label": "خانه SVG",
+      "value": "",
+      "emoji": "🖼️",
+      "type": "graphic",
+      "category": "graphic",
+      "hint": "آپلود SVG از مخزن"
+    },
+    {
+      "id": "svg-card",
+      "label": "کارت SVG",
+      "value": "",
+      "emoji": "🖼️",
+      "type": "graphic",
+      "category": "graphic",
+      "hint": "آپلود SVG از مخزن"
+    },
+    {
+      "id": "svg-shop",
+      "label": "فروشگاه SVG",
+      "value": "",
+      "emoji": "🖼️",
+      "type": "graphic",
+      "category": "graphic",
+      "hint": "آپلود SVG از مخزن"
+    },
+    {
+      "id": "lot-load",
+      "label": "لوتی بارگذاری",
+      "value": "",
+      "emoji": "✨",
+      "type": "animated",
+      "category": "animated",
+      "hint": "لینک Lottie/Lordicon"
+    },
+    {
+      "id": "lot-success",
+      "label": "لوتی موفقیت",
+      "value": "",
+      "emoji": "✨",
+      "type": "animated",
+      "category": "animated",
+      "hint": "لینک Lottie/Lordicon"
+    },
+    {
+      "id": "lord-click",
+      "label": "لردی کلیک",
+      "value": "",
+      "emoji": "✨",
+      "type": "animated",
+      "category": "animated",
+      "hint": "لینک Lottie/Lordicon"
+    },
+    {
+      "id": "spin",
+      "label": "چرخش",
+      "value": "🔄",
+      "emoji": "🔄",
+      "type": "animated",
+      "category": "animated"
+    },
+    {
+      "id": "pulse",
+      "label": "تپش",
+      "value": "💓",
+      "emoji": "💓",
+      "type": "animated",
+      "category": "animated"
+    },
+    {
+      "id": "spark",
+      "label": "جرقه",
+      "value": "✨",
+      "emoji": "✨",
+      "type": "animated",
+      "category": "animated"
+    },
+    {
+      "id": "fa-cart",
+      "label": "FA Cart",
+      "value": "fa-shopping-cart",
+      "emoji": "🛒",
+      "type": "font",
+      "category": "font"
+    },
+    {
+      "id": "g-card",
+      "label": "کارت گرافیکی",
+      "value": "▣",
+      "emoji": "▣",
+      "type": "graphic",
+      "category": "graphic"
+    },
+    {
+      "id": "g-star",
+      "label": "ستاره گرافیکی",
+      "value": "★",
+      "emoji": "★",
+      "type": "graphic",
+      "category": "graphic"
+    }
+  ]
+}

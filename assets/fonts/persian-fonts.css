@@ -1,0 +1,109 @@
+/* City Ghest — Persian fonts (bundled + B-series via local/custom upload) */
+
+/* === Bundled web fonts === */
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('woff2/Vazirmatn-Regular.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('woff2/Vazirmatn-Bold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Vazir';
+  src: url('woff2/Vazir-Regular.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Vazir';
+  src: url('woff2/Vazir-Bold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Samim';
+  src: url('woff2/Samim.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Samim';
+  src: url('woff2/Samim-Bold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Shabnam';
+  src: url('woff2/Shabnam.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Shabnam';
+  src: url('woff2/Shabnam-Bold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Tanha';
+  src: url('woff2/Tanha.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Parastoo';
+  src: url('woff2/Parastoo.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Parastoo';
+  src: url('woff2/Parastoo-Bold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Sahel';
+  src: url('woff2/Sahel.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Sahel';
+  src: url('woff2/Sahel-Bold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Gandom';
+  src: url('woff2/Gandom.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+
+/* === B Nazanin (local system OR custom upload woff2/BNazanin.woff2) === */
+@font-face {
+  font-family: 'B Nazanin';
+  src: local('B Nazanin'), local('BNazanin'), local('B Nazanin Regular'),
+       url('woff2/BNazanin.woff2') format('woff2'),
+       url('woff2/BNazanin.woff') format('woff');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'B Nazanin';
+  src: local('B Nazanin Bold'), local('BNazanin Bold'), local('B NaznnBd'),
+       url('woff2/BNazanin-Bold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+
+/* === B Titr (titles) === */
+@font-face {
+  font-family: 'B Titr';
+  src: local('B Titr'), local('BTitr'), local('B Titr Bold'), local('BTitrBold'),
+       url('woff2/BTitrBold.woff2') format('woff2'),
+       url('woff2/BTitr.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+
+/* Aliases for form builder dropdown */
+.font-bnazanin, .font-b-nazanin { font-family: 'B Nazanin', 'Parastoo', Tahoma, sans-serif; }
+.font-btitr, .font-b-titr { font-family: 'B Titr', 'Vazirmatn', Tahoma, sans-serif; }
+.font-vazirmatn { font-family: 'Vazirmatn', Tahoma, sans-serif; }
+.font-vazir { font-family: 'Vazir', Tahoma, sans-serif; }
+.font-samim { font-family: 'Samim', Tahoma, sans-serif; }
+.font-shabnam { font-family: 'Shabnam', Tahoma, sans-serif; }
+.font-tanha { font-family: 'Tanha', Tahoma, sans-serif; }
+.font-parastoo { font-family: 'Parastoo', Tahoma, sans-serif; }
+.font-sahel { font-family: 'Sahel', Tahoma, sans-serif; }
+.font-gandom { font-family: 'Gandom', Tahoma, sans-serif; }

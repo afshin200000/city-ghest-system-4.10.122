@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>راهنمای تصویری کوئری شرطی — شهر قسط</title>
+<style>
+body{font-family:Tahoma,Vazirmatn,sans-serif;background:#f1f5f9;margin:0;padding:24px;color:#1e293b;line-height:1.7}
+.card{max-width:860px;margin:0 auto 16px;background:#fff;border-radius:16px;padding:20px 24px;box-shadow:0 4px 20px rgba(15,23,42,.08);border:1px solid #e2e8f0}
+h1{color:#1a237e;margin:0 0 8px;font-size:1.4rem}
+h2{color:#312e81;font-size:1.1rem;margin:0 0 10px}
+.steps{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.step{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:14px}
+.num{display:inline-flex;width:28px;height:28px;border-radius:50%;background:#1a237e;color:#fff;align-items:center;justify-content:center;font-weight:800;margin-left:6px}
+.example{background:#eef2ff;border-radius:12px;padding:14px;border:1px dashed #3949ab;font-size:14px}
+.ok{color:#166534;font-weight:700}
+.warn{color:#b45309}
+code{background:#e2e8f0;padding:2px 6px;border-radius:4px;font-size:12px}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>⚡ راهنمای آسان کوئری‌های شرطی</h1>
+  <p>با منطق شرطی می‌توانید یک فیلد را فقط وقتی نشان دهید (یا مخفی کنید) که شرطی برقرار باشد — مثل Gravity Forms.</p>
+</div>
+<div class="card">
+  <h2>مراحل کار</h2>
+  <div class="steps">
+    <div class="step"><span class="num">۱</span><strong>فیلد را باز کنید</strong><br>روی ویرایش فیلدی که باید شرطی شود کلیک کنید.</div>
+    <div class="step"><span class="num">۲</span><strong>منطق شرطی را فعال کنید</strong><br>تیک «فعال» در باکس زرد/آبی منطق شرطی را بزنید.</div>
+    <div class="step"><span class="num">۳</span><strong>عمل را انتخاب کنید</strong><br>«نمایش اگر شرط برقرار» یا «مخفی اگر شرط برقرار».</div>
+    <div class="step"><span class="num">۴</span><strong>شرط بسازید</strong><br>+ شرط → کلید فیلد مرجع (مثلاً <code>person_type</code>) → برابر → مقدار (مثلاً حقوقی).</div>
+    <div class="step"><span class="num">۵</span><strong>ذخیره</strong><br>ذخیره فیلد را بزنید. در فرم واقعی شرط اعمال می‌شود.</div>
+  </div>
+</div>
+<div class="card">
+  <h2>مثال کاربردی</h2>
+  <div class="example">
+    <p><strong>هدف:</strong> فیلد «شناسه ملی شرکت» فقط وقتی دیده شود که نوع شخص = <b>حقوقی</b> باشد.</p>
+    <ol>
+      <li>فیلد «نوع شخص» با کلید <code>person_type</code> و گزینه‌های حقیقی/حقوقی</li>
+      <li>فیلد «شناسه ملی شرکت» → منطق شرطی فعال</li>
+      <li>عمل: نمایش اگر شرط برقرار</li>
+      <li>شرط: فیلد <code>person_type</code> — برابر — <code>حقوقی</code></li>
+    </ol>
+    <p class="ok">✓ وقتی کاربر «حقوقی» را انتخاب کند، فیلد ظاهر می‌شود.</p>
+  </div>
+</div>
+<div class="card">
+  <h2>عملگرها</h2>
+  <ul>
+    <li><b>برابر</b> — مقدار دقیقاً یکی باشد</li>
+    <li><b>نابرابر</b> — هر چیزی غیر از آن مقدار</li>
+    <li><b>شامل</b> — متن شامل یک عبارت باشد</li>
+    <li><b>خالی / غیرخالی</b> — پر بودن فیلد مرجع</li>
+  </ul>
+  <p class="warn">نکته: در «کلید فیلد مرجع» همان <code>field_key</code> فیلد دیگر را بنویسید (در لیست فیلدها کنار هر فیلد دیده می‌شود).</p>
+</div>
+
+<div class="card">
+  <h2>شرط‌های تو در تو</h2>
+  <p><b>منطق و:</b> همه شرط‌ها با هم → فیلد دیده می‌شود.</p>
+  <p><b>منطق یا:</b> کافی است یکی برقرار باشد.</p>
+  <div class="example">
+    شرط۱: person_type = حقوقی<br>
+    شرط۲: province = تهران<br>
+    با «و» فقط حقوقی تهرانی؛ با «یا» حقوقی یا تهرانی.
+  </div>
+  <p>برای عمق بیشتر: فیلد میانی شرطی بسازید، فیلد سوم را به فیلد میانی وابسته کنید.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* City Ghest icon set — SVG background icons + utility classes */
+.cgs-icon {
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  vertical-align: -0.2em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cgs-icon-lg { width: 2em; height: 2em; }
+.cgs-icon-xl { width: 3em; height: 3em; }
+
+.cgs-icon-user { background-image: url('../static/user.svg'); }
+.cgs-icon-phone { background-image: url('../static/phone.svg'); }
+.cgs-icon-mobile { background-image: url('../static/mobile.svg'); }
+.cgs-icon-id-card { background-image: url('../static/id-card.svg'); }
+.cgs-icon-map { background-image: url('../static/map.svg'); }
+.cgs-icon-calendar { background-image: url('../static/calendar.svg'); }
+.cgs-icon-bank { background-image: url('../static/bank.svg'); }
+.cgs-icon-check { background-image: url('../static/check.svg'); }
+.cgs-icon-file { background-image: url('../static/file.svg'); }
+.cgs-icon-camera { background-image: url('../static/camera.svg'); }
+.cgs-icon-lock { background-image: url('../static/lock.svg'); }
+.cgs-icon-star { background-image: url('../static/star.svg'); }
+.cgs-icon-home { background-image: url('../static/home.svg'); }
+.cgs-icon-mail { background-image: url('../static/mail.svg'); }
+.cgs-icon-building { background-image: url('../static/building.svg'); }
+.cgs-icon-money { background-image: url('../static/money.svg'); }
+.cgs-icon-shield { background-image: url('../static/shield.svg'); }
+.cgs-icon-users { background-image: url('../static/users.svg'); }
+.cgs-icon-edit { background-image: url('../static/edit.svg'); }
+.cgs-icon-success { background-image: url('../static/success.svg'); }
+
+/* Animated */
+.cgs-icon-spinner { background-image: url('../animated/spinner.svg'); }
+.cgs-icon-pulse-check { background-image: url('../animated/pulse-check.svg'); }
+.cgs-icon-loading-dots { background-image: url('../animated/loading-dots.svg'); width: 2.5em; }
+.cgs-icon-heart-beat { background-image: url('../animated/heart-beat.svg'); }
+.cgs-icon-progress-ring { background-image: url('../animated/progress-ring.svg'); }
+.cgs-icon-thumbs-up { background-image: url('../animated/thumbs-up.svg'); }
